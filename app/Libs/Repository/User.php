@@ -193,9 +193,9 @@ class User
             if (Storage::disk('public')->exists($oldPath)) {
                 Storage::disk('public')->delete($oldPath);
             }
-        }
 
-        $media->delete();
+            $media->delete();
+        }
         
     }
 
